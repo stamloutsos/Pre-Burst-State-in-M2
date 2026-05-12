@@ -21,17 +21,23 @@ This completes a two-stage model with our earlier Langevin work: M2 samples, bur
 pip install -r requirements.txt
 dandi download DANDI:000139
 python src/batch_steinmetz_analysis.py
+```
 
-Test	Value
-Burst latency	-190 ms, p=7.9e-14
-Pre-burst prediction	t=3.4, p=8.6e-4
-Granger MOs→lick	80 ms, p=2.8e-81
-MSD linearity	R²>0.98
+### Results
 
-Full tables in /results/
+| Test | Value |
+|------|-------|
+| Burst latency | -190 ms, p=7.9e-14 |
+| Pre-burst prediction | t=3.4, p=8.6e-4 |
+| Granger MOs→lick | 80 ms, p=2.8e-81 |
+| MSD linearity | R²>0.98 |
 
-Cite
-Loutsos, S. (2026). Pre-Burst State in M2. Figshare. doi:10.6084/m9.figshare.32253159
+Full tables in `/results/`
 
-License
+### Cite
+
+> Loutsos, S. (2026). Pre-Burst State in M2. Figshare. doi:10.6084/m9.figshare.32253159
+
+### License
+
 Code MIT · Content CC BY 4.0 · © 2026 Stamelos Loutsos
