@@ -15,28 +15,18 @@ We reanalyzed open Neuropixels data (Steinmetz et al. 2019, DANDI:000139) and fo
 
 This completes a two-stage model with our earlier Langevin work: M2 samples, bursts, then basal ganglia gates.
 
-Requires: dandi download DANDI:000139
+### Reproduce in 2 commands
 
-Results
-Test
+```bash
+pip install -r requirements.txt
+dandi download DANDI:000139
+python src/batch_steinmetz_analysis.py
 
-Value
-
-Burst latency
-
--190 ms, p=7.9e-14
-
-Pre-burst prediction
-
-t=3.4, p=8.6e-4
-
-Granger MOs→lick
-
-80 ms, p=2.8e-81
-
-MSD linearity
-
-R²>0.98
+Test	Value
+Burst latency	-190 ms, p=7.9e-14
+Pre-burst prediction	t=3.4, p=8.6e-4
+Granger MOs→lick	80 ms, p=2.8e-81
+MSD linearity	R²>0.98
 
 Full tables in /results/
 
@@ -45,12 +35,3 @@ Loutsos, S. (2026). Pre-Burst State in M2. Figshare. doi:10.6084/m9.figshare.322
 
 License
 Code MIT · Content CC BY 4.0 · © 2026 Stamelos Loutsos
-
-### Reproduce in 2 commands
-
-```bash
-pip install -r requirements.txt
-python src/batch_steinmetz_analysis.py
-
-Requires: dandi download DANDI:000139
-
